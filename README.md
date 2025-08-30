@@ -16,7 +16,7 @@ Nosso trabalho teve como foco dar **Representatividade** as escolas de Santa Cat
 ## 🎯 Objetivos
 Criar escolas na Wikidata, nas quais não existiam, utilizando-se desses passos:
   - Extrair e tratar os dados a partir de um arquivo fonte (Censo Escolar), garantindo a qualidade e consistência das informações.
-  - Verificar se cada instituição existe na Wikidata por meio de consultas em SPARQL, a fim de evitando duplicidades.
+  - Verificar se cada instituição existe na Wikidata por meio de consultas em SPARQL, a fim de evitar duplicidades.
   - Criar novos itens no Wikidata para as escolas não encontradas
 
 ## 🛠️ Metodologia
@@ -42,14 +42,12 @@ Todas as escolas de Santa Catarina, nas quais não tem acesso a rede de esgoto.
 
 1. BRASIL. Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. *Censo escolar da educação básica 2023: microdados*. Disponível no: [link](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar). Acesso em: 8 ago. 2025.  
 
-2. GITHUB. *NBAP-WikiData-Escolas*. Disponível no: [link](https://github.com/Shadow6742-83/NBAP-WikiData-Escolas). Acesso em: 8 ago. 2025.  
+2. OUTREACH DASHBOARD. *Wikidata na Escola*. Disponível no: [link](https://outreachdashboard.wmflabs.org/courses/EEB_Prof._Nicola_Baptista/Wikidata_na_Escola/home). Acesso em: 8 ago. 2025.  
 
-3. OUTREACH DASHBOARD. *Wikidata na Escola*. Disponível no: [link](https://outreachdashboard.wmflabs.org/courses/EEB_Prof._Nicola_Baptista/Wikidata_na_Escola/home). Acesso em: 8 ago. 2025.  
+3. SAMPAIO, R.C.; SABBATINI, M.; LIMONGI, R. *Diretrizes para o uso ético e responsável da Inteligência Artificial Generativa: um guia prático para pesquisadores*. São Paulo: Editora Intercom, 2024.  
 
-4. SAMPAIO, R.C.; SABBATINI, M.; LIMONGI, R. *Diretrizes para o uso ético e responsável da Inteligência Artificial Generativa: um guia prático para pesquisadores*. São Paulo: Editora Intercom, 2024.  
+4. SANTA CATARINA. *Educação na Palma da Mão*. Disponível no: [link](https://www.sed.sc.gov.br/educacao-na-palma-da-mao/). Acesso em: 8 ago. 2025.  
 
-5. SANTA CATARINA. *Educação na Palma da Mão*. Disponível no: [link](https://www.sed.sc.gov.br/educacao-na-palma-da-mao/). Acesso em: 8 ago. 2025.  
+5. TRIBUNAL DE CONTAS DE SANTA CATARINA. *Painel de Infraestrutura das Escolas Catarinenses*. Disponível no: [link](https://tcesc.shinyapps.io/painelinfraestrutura/). Acesso em: 8 ago. 2025.  
 
-6. TRIBUNAL DE CONTAS DE SANTA CATARINA. *Painel de Infraestrutura das Escolas Catarinenses*. Disponível no: [link](https://tcesc.shinyapps.io/painelinfraestrutura/). Acesso em: 8 ago. 2025.  
-
-7. WIKIDATA. *Introduction*. Disponível no: [link](https://www.wikidata.org/wiki/Wikidata:Introduction). Acesso em: 8 ago. 2025.  
+6. WIKIDATA. *Introduction*. Disponível no: [link](https://www.wikidata.org/wiki/Wikidata:Introduction). Acesso em: 8 ago. 2025.  
