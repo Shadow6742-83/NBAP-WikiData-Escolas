@@ -35,7 +35,7 @@ O projeto mostrou que a Wikidata foi mais interativa que vários sites govername
 </p>
 <p align="center">
 Todas as escolas de Santa Catarina, nas quais não tem acesso a rede de esgoto.
-(Veja mais no [link](https://w.wiki/FCPs))
+(Veja a consulta em https://w.wiki/FCPs)
 </p>
 
 ## 📚 Referências
