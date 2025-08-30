@@ -40,16 +40,16 @@ Todas as escolas de Santa Catarina, nas quais não tem acesso a rede de esgoto.
 
 ## 📚 Referências
 
-1. BRASIL. Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. *Censo escolar da educação básica 2023: microdados*. Disponível em: [link](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar). Acesso em: 8 ago. 2025.  
+1. BRASIL. Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira. *Censo escolar da educação básica 2023: microdados*. Disponível no: [link](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar). Acesso em: 8 ago. 2025.  
 
-2. GITHUB. *NBAP-WikiData-Escolas*. Disponível em: [link](https://github.com/Shadow6742-83/NBAP-WikiData-Escolas). Acesso em: 8 ago. 2025.  
+2. GITHUB. *NBAP-WikiData-Escolas*. Disponível no: [link](https://github.com/Shadow6742-83/NBAP-WikiData-Escolas). Acesso em: 8 ago. 2025.  
 
-3. OUTREACH DASHBOARD. *Wikidata na Escola*. Disponível em: [link](https://outreachdashboard.wmflabs.org/courses/EEB_Prof._Nicola_Baptista/Wikidata_na_Escola/home). Acesso em: 8 ago. 2025.  
+3. OUTREACH DASHBOARD. *Wikidata na Escola*. Disponível no: [link](https://outreachdashboard.wmflabs.org/courses/EEB_Prof._Nicola_Baptista/Wikidata_na_Escola/home). Acesso em: 8 ago. 2025.  
 
 4. SAMPAIO, R.C.; SABBATINI, M.; LIMONGI, R. *Diretrizes para o uso ético e responsável da Inteligência Artificial Generativa: um guia prático para pesquisadores*. São Paulo: Editora Intercom, 2024.  
 
-5. SANTA CATARINA. *Educação na Palma da Mão*. Disponível em: [link](https://www.sed.sc.gov.br/educacao-na-palma-da-mao/). Acesso em: 8 ago. 2025.  
+5. SANTA CATARINA. *Educação na Palma da Mão*. Disponível no: [link](https://www.sed.sc.gov.br/educacao-na-palma-da-mao/). Acesso em: 8 ago. 2025.  
 
-6. TRIBUNAL DE CONTAS DE SANTA CATARINA. *Painel de Infraestrutura das Escolas Catarinenses*. Disponível em: [link](https://tcesc.shinyapps.io/painelinfraestrutura/). Acesso em: 8 ago. 2025.  
+6. TRIBUNAL DE CONTAS DE SANTA CATARINA. *Painel de Infraestrutura das Escolas Catarinenses*. Disponível no: [link](https://tcesc.shinyapps.io/painelinfraestrutura/). Acesso em: 8 ago. 2025.  
 
-7. WIKIDATA. *Introduction*. Disponível em: [link](https://www.wikidata.org/wiki/Wikidata:Introduction). Acesso em: 8 ago. 2025.  
+7. WIKIDATA. *Introduction*. Disponível no: [link](https://www.wikidata.org/wiki/Wikidata:Introduction). Acesso em: 8 ago. 2025.  
