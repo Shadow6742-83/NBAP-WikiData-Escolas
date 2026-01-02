@@ -75,7 +75,7 @@ Algumas partes teremos que explicar como funciona a Wikidata, para mais informa�
                       )```
           </pre>
 
-        No exemplo acima, o Item é a Escola, a Propriedde é "Instalações" e o Valor é Gestão de Resíduos Sólidos, porém o Valor se torna um Item para abrigar a Propriedade "P1552" (Tem Característica) e ter um valor "Q931389" (Coleta Seletiva), enquanto ele mesmo é um valor do Item "Escola".
+        No exemplo acima, o Item é a Escola, a Propriedade é "Instalações" e o Valor é Gestão de Resíduos Sólidos, porém o Valor se torna um Item para abrigar a Propriedade "P1552" (Tem Característica) e ter um valor "Q931389" (Coleta Seletiva), enquanto ele mesmo é um valor do Item "Escola".
 
   - **formatar_nome(nome):** Essa Função é muito mais simples, ela somente corrige os nomes do arquivo do Censo Escolar.
 
