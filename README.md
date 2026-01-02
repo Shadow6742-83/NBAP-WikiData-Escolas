@@ -52,7 +52,7 @@ Algumas partes teremos que explicar como funciona a Wikidata, para mais informa�
     
       Exemplo um pouco dificil? Ok! Vamos para um mais fácil!.
 
-      Exemplo 2: ```adicionar_declaracao(item, 'P31', 'Q3914')``` Aqui é um pouco mais fácil, O código mostra, que ele irá adicionar na Escola (Item) que ela é uma "Instância de" (P31, Propriedade) de "Escola" (Q3914, Valor).
+      Exemplo 2: ```adicionar_declaracao(item, 'P31', 'Q3914')``` Aqui é um pouco mais fácil, O código mostra, que ele irá adicionar na Escola (Item) que ela é uma "Instância de" (P31, Propriedade) "Escola" (Q3914, Valor).
    
     - Já ```valor_tipo='wikibase-item'``` é o tipo de valor que a variável ```valor``` tem.
     Por exemplo: se o valor dela for ```coordinate``` ela vai ser tratada como uma coordenada, se for uma ```string```, ela vai ser tratada como um texto e assim por diante. Caso não for um valor valido, o código gera um erro.
