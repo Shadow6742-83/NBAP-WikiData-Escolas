@@ -28,7 +28,7 @@ O projeto foi feito concluindo esses quatro passos principais:
 
 ## 📊 Resultados
 Foram criadas 6.590 instituições na Wikidata, desde escolas municipais, estaduais, quilombolas, rurais e privadas, contendo dados de **Saneamento Básico**, **Tratemento de lixo** e **Tipo de energia elétrica**
-O projeto mostrou que a Wikidata foi mais interativa que vários sites governamentais (Exemplos: Educação na Palma da Mão, Tribunal de Contas do Estado de Santa Catarina - TCE/SC)
+O projeto mostrou que a Wikidata foi mais interativa que alguns sites governamentais (Exemplo: Educação na Palma da Mão), pois na Wikidata, os dados estão disponiveis tanto pras maquinas, quanto pros humanos.
 
 <p align="center">
   <img src="image.png" alt="Logo do Projeto" width="600"/>
