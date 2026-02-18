@@ -19,6 +19,10 @@ Criar escolas na Wikidata, nas quais não existiam, utilizando-se desses passos:
   - Verificar se cada instituição existe na Wikidata por meio de consultas em SPARQL, a fim de evitar duplicidades.
   - Criar novos itens no Wikidata para as escolas não encontradas
 
+E apartir da versão 2.0:
+
+  - Editar os dados das escolas na Wikidata, para manter o banco de dados atualizado com as informações mais recentes das escolas.
+
 ## 🛠️ Metodologia
 O projeto foi feito concluindo esses quatro passos principais:
   1. **Capacitação** – Foi realizada oficinas online e presenciais para introduzir a Wikidata, Python, SPARQL e o conceito dos dados estruturados aos alunos do projeto.
@@ -38,9 +42,9 @@ Todas as escolas de Santa Catarina, nas quais não tem acesso a rede de esgoto.
 (Veja a consulta em https://w.wiki/FCPs)
 </p>
 
-## 🛠 Explicando o Repositório
+## 🛠 Explicando o Repositório (Após a versão 2.0)
 
-- **Main.py:** Esse arquivo é um mediador, uma ponte entre criar escolas e editar-as informações delas na Wikidata, ele analisa o arquivo do Censo Escolar e com base no código INEP, consulta se a mesma existe.
+- **Main.py:** Esse arquivo é um mediador, uma ponte entre criar escolas e editar as informações delas na Wikidata, ele analisa o arquivo do Censo Escolar e com base no código INEP, consulta se a mesma existe.
 Se existe, ele cria, se não, verifica.
 
 - **createNewSchool.py e editSchool.py:** Simples, eles contem funções que criam e editam funções respectivamente.
