@@ -48,60 +48,62 @@ def inicializar():
             sistema = platform.system()
             versao = None
             if sistema == 'Linux':
-                with open('/etc/os-release', 'r') as f:
-                    conteudo = f.read()
+                try:
+                    with open('/etc/os-release', 'r') as f:
+                        conteudo = f.read()
 
-                    if ('ID=arch' or 'ID_LIKE=arch') in conteudo:
-                        versao = "arch"
-                        resposta = input('Você está usando um sistema baseado em Arch Linux, e parece que não tem Pywikibot instalado (O que é necessario).\nGostaria de instalar? (S/n)\n: ')
-                        paru = False
-                        yay = False
-                        if resposta == '' or resposta == 'S' or resposta == 's':
-                            # Checando se tem helpers
-                            for i in range(2):
-                                match i:
-                                    case 0:
-                                        try:
-                                            
-                                            aur_h = os.system("yay --version > /dev/null 2>&1")
-                                            yay = True
-                                            
-                                        except FileNotFoundError:
-                                            print("Sem Yay")
+                        if ('ID=arch' or 'ID_LIKE=arch') in conteudo:
+                            versao = "arch"
+                            resposta = input('Você está usando um sistema baseado em Arch Linux, e parece que não tem Pywikibot instalado (O que é necessario).\nGostaria de instalar? (S/n)\n: ')
+                            paru = False
+                            yay = False
+                            if resposta == '' or resposta == 'S' or resposta == 's':
+                                # Checando se tem helpers
+                                for i in range(2):
+                                    match i:
+                                        case 0:
+                                            try:
+                                                
+                                                aur_h = os.system("yay --version > /dev/null 2>&1")
+                                                yay = True
+                                                
+                                            except FileNotFoundError:
+                                                print("Sem Yay")
 
-                                    case 1:
-                                        try:
-                                            
-                                            aur_h = os.system("paru --version > /dev/null 2>&1")
-                                            paru = True
-                                            
-                                        except FileNotFoundError:
-                                            print("Sem Paru")
+                                        case 1:
+                                            try:
+                                                
+                                                aur_h = os.system("paru --version > /dev/null 2>&1")
+                                                paru = True
+                                                
+                                            except FileNotFoundError:
+                                                print("Sem Paru")
 
-                            if yay and paru:
-                                aur_resposta = input("Você tem o Yay e o Paru, qual gostaria de usar para baixar o Pywikibot? \n[1] Yay\n[2] Paru\n: ")
-                                if aur_resposta == 1:
+                                if yay and paru:
+                                    aur_resposta = input("Você tem o Yay e o Paru, qual gostaria de usar para baixar o Pywikibot? \n[1] Yay\n[2] Paru\n: ")
+                                    if aur_resposta == 1:
+                                        os.system("yay -S --noconfirm pywikibot")
+                                    elif aur_resposta == 2:
+                                        os.system("paru -S --noconfirm pywikibot")
+
+                                elif yay and not paru:
+                                    print("Instalando a biblioteca pywikibot pelo Yay!")
                                     os.system("yay -S --noconfirm pywikibot")
-                                elif aur_resposta == 2:
+
+                                elif not yay and paru:
+                                    print("Instalando a biblioteca pywikibot pelo Paru!")
                                     os.system("paru -S --noconfirm pywikibot")
 
-                            elif yay and not paru:
-                                print("Instalando a biblioteca pywikibot pelo Yay!")
-                                os.system("yay -S --noconfirm pywikibot")
-
-                            elif not yay and paru:
-                                print("Instalando a biblioteca pywikibot pelo Paru!")
-                                os.system("paru -S --noconfirm pywikibot")
-
-                            elif not yay and not paru:
-                                aur_resposta= input("Você não tem nenhum helper do Arch,\nPrefere Yay ou Paru?\n[1] Yay\n[2] Paru\n: ")
-                                if aur_resposta == 1:
-                                    os.system("sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si")
-                                    os.system("yay -S --noconfirm pywikibot")
-                                elif aur_resposta == 2:
-                                    os.system("sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si")
-                                    os.system("paru -S --noconfirm pywikibot")
-
+                                elif not yay and not paru:
+                                    aur_resposta= input("Você não tem nenhum helper do Arch,\nPrefere Yay ou Paru?\n[1] Yay\n[2] Paru\n: ")
+                                    if aur_resposta == 1:
+                                        os.system("sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si")
+                                        os.system("yay -S --noconfirm pywikibot")
+                                    elif aur_resposta == 2:
+                                        os.system("sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si")
+                                        os.system("paru -S --noconfirm pywikibot")
+                        except FileNotFoundError:
+                            return
                     else:
                         os.system("pip install pywikibot")
             
