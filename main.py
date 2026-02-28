@@ -157,13 +157,12 @@ def formatar_nome(nome):
 
 # Início do script
 
-# Vamos trabalhar com pywikibot que é uma biblioteca, logo, precisamos importá-la
-import pywikibot
+# Vamos trabalhar com pywikibot que é uma biblioteca, logo, precisamos importá-la usando o configurador.py
+from configurador import inicializar
 
-# A função PageGenerator interpreta a consulta SPARQL e retorna objetos pywikibot; WbTime é necessário
-# para processar datas no formato do Wikidata
-from pywikibot import pagegenerators, WbTime, WbQuantity, ItemPage
-from pywikibot.exceptions import OtherPageSaveError
+inicializar()
+
+
 import re
 import sys
 import time
@@ -172,20 +171,27 @@ import itertools
 if not hasattr(time, 'original_sleep'):
     time.original_sleep = time.sleep
     time.sleep = animacao_espera
+    
 # Vamos utilizar essa biblioteca para ler o arquivo fonte, que está salvo no formato csv
+
 import csv
-import subprocess
+
 from createNewSchool import criar_escolas
 from editSchool import editar_escolas
+
+
+
+pasta_atual = os.getcwd()
 # Etapa 1: obter os dados da escola de um arquivo fonte
 
 # Definindo qual é o arquivo fonte (com os dados que iremos importar)
-arquivo_fonte = 'microdados_ed_basica_2023_sc_resumido.csv'
+arquivo_fonte = f'{pasta_atual}/dados/microdados_ed_basica_2023_sc_resumido.csv'
 
-# Definindo o site (wikidata)
-site = pywikibot.Site("wikidata", "wikidata")
-repo = site.data_repository()
-site.user_agent = "NBAP 2.0"
+
+# try:
+    # os.name
+# except os.path.exists(f"{pasta_atual}/logs"):
+    # os.mkdir("logs")
 
 
 with open(arquivo_fonte, newline='', encoding='utf-8') as arquivo_csv:
