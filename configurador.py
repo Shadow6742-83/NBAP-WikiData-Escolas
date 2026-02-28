@@ -102,8 +102,8 @@ def inicializar():
                                     elif aur_resposta == 2:
                                         os.system("sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/paru.git && cd paru && makepkg -si")
                                         os.system("paru -S --noconfirm pywikibot")
-                    else:
-                        os.system("pip install pywikibot")
+                        else:
+                            os.system("pip install pywikibot")
                         
                 except FileNotFoundError:
                     return
