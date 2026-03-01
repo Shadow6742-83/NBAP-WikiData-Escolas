@@ -78,7 +78,7 @@ def inicializar(formatar_nome):
                                 print("Infelizmente, o script não pode continuar sem o Pywikibot!!")
                                 exit
                                 
-                        elif ('ID=debian' or "ID_LIKE=debian"):
+                        elif ('ID=debian' or "ID_LIKE=debian") in conteudo:
                             versao = "debian"
                             resposta = formatar_nome(input('Você está usando um sistema baseado no Debian, e parece que não tem Pywikibot instalado (O que é necessario).\nGostaria de instalar? (S/n)\n: '))
                             
