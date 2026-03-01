@@ -158,10 +158,22 @@ def formatar_nome(nome):
 # Início do script
 
 # Vamos trabalhar com pywikibot que é uma biblioteca, logo, precisamos importá-la usando o configurador.py
+import platform
+import os
+import configurador
 from configurador import inicializar
 
-inicializar()
 
+site, repo = inicializar(formatar_nome)
+
+
+import subprocess
+import pywikibot
+# A função PageGenerator interpreta a consulta SPARQL e retorna objetos pywikibot; WbTime é necessário
+# para processar datas no formato do Wikidata
+
+from pywikibot import pagegenerators, WbTime, WbQuantity, ItemPage
+from pywikibot.exceptions import OtherPageSaveError
 
 import re
 import sys
@@ -181,7 +193,9 @@ from editSchool import editar_escolas
 
 
 
-pasta_atual = os.getcwd()
+pasta_atual = os.path.dirname(os.path.abspath(__file__))
+os.chdir(pasta_atual)
+
 # Etapa 1: obter os dados da escola de um arquivo fonte
 
 # Definindo qual é o arquivo fonte (com os dados que iremos importar)
@@ -237,6 +251,7 @@ with open(arquivo_fonte, newline='', encoding='utf-8') as arquivo_csv:
         continuar = None
         if escolas:
             editar_escolas(nome, codigo_inep, codigo_municipio, municipio, estudantes, professores, localizacao, localizacao_diferenciada, coordenadas_latitude, coordenadas_longitude, queima_lixo, separa_lixo, esgoto_fossa_comum, esgoto_inexistente, esgoto_rede, esgoto_fossa_septica, energia_gerador, energia_publica, energia_renovavel, adicionar_declaracao, escolas, continuar, energia_inexistente)
+            print("Editando")
 
         elif not escolas:
             try:
