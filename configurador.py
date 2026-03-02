@@ -31,7 +31,7 @@ def inicializar(formatar_nome):
 
             if username:
                 print (f"Olá, {username}!")
-                pwb_continuar = True
+                pwb_continue = True
             else:
                 user_login = input("Você não está logado no pywikibot.\nGostaria de se conectar? (S/n)\n: ")
 
@@ -41,10 +41,15 @@ def inicializar(formatar_nome):
                     os.system(f"python {pasta_atual}/core/pwb.py generate_user_files") 
                     os.system(f"python {pasta_atual}/core/pwb.py login")
                     print("Logado!")
+                    # Definindo o site (wikidata)
+                    pywikibot.config.user_agent = "NBAP 2.1 (BETA)"
+                    site = pywikibot.Site("wikidata", "wikidata")
+                    repo = site.data_repository()
                     username = site.user()
+                    #site.user_agent = "NBAP 2.0"
                     
                     print (f"Olá, {username}!")
-                    pwb_continuar = True
+                    pwb_continue = True
                 
                 else:
                     print("Infelizmente, o script não pode continuar")
