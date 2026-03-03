@@ -155,17 +155,24 @@ def formatar_nome(nome):
     
     return ' '.join(resultado)
 
+def restart_script():
+    """ Função pra reiniciar o script """
+    os.execv(sys.executable,[sys.executable, os.path.abspath(__file__)] + sys.argv[1:])
+
 # Início do script
 
 # Vamos trabalhar com pywikibot que é uma biblioteca, logo, precisamos importá-la usando o configurador.py
 import platform
 import os
 import configurador
+import sys
 from configurador import inicializar
 
 
-site, repo = inicializar(formatar_nome)
+site, repo, retry = inicializar(formatar_nome)
 
+if retry:
+    restart_script()
 
 import subprocess
 import pywikibot
@@ -176,7 +183,6 @@ from pywikibot import pagegenerators, WbTime, WbQuantity, ItemPage
 from pywikibot.exceptions import OtherPageSaveError
 
 import re
-import sys
 import time
 import itertools
 

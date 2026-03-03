@@ -6,11 +6,11 @@ def inicializar(formatar_nome):
     pasta_atual = os.path.dirname(os.path.abspath(__file__))
     os.chdir(pasta_atual)
     pwb_continue = False
-    
+    retry = False
     while not pwb_continue:    
         try:
+            
             import pywikibot
-
             
             # A função PageGenerator interpreta a consulta SPARQL e retorna objetos pywikibot; WbTime é necessário
             # para processar datas no formato do Wikidata
@@ -22,11 +22,11 @@ def inicializar(formatar_nome):
             
             
             # Definindo o site (wikidata)
-            pywikibot.config.user_agent = "NBAP 2.1 (BETA)"
+            
             site = pywikibot.Site("wikidata", "wikidata")
             repo = site.data_repository()
             username = site.user()
-            #site.user_agent = "NBAP 2.0"
+            site.user_agent = "NBAP 2.0"
 
 
             if username:
@@ -41,16 +41,8 @@ def inicializar(formatar_nome):
                     os.system(f"python {pasta_atual}/core/pwb.py generate_user_files") 
                     os.system(f"python {pasta_atual}/core/pwb.py login")
                     print("Logado!")
-                    # Definindo o site (wikidata)
-                    pywikibot.config.user_agent = "NBAP 2.1 (BETA)"
-                    site = pywikibot.Site("wikidata", "wikidata")
-                    repo = site.data_repository()
-                    username = site.user()
-                    #site.user_agent = "NBAP 2.0"
-                    
-                    print (f"Olá, {username}!")
+                    retry = True
                     pwb_continue = True
-                
                 else:
                     print("Infelizmente, o script não pode continuar")
                     quit
@@ -116,6 +108,7 @@ def inicializar(formatar_nome):
                     else:
                         input("Parece que você não tem o git instalado, baixando a versão atual e instalando.\nPressione qualquer tecla para continuar.")
                         os.system("winget install --id Git.Git -e --source winget")
-                        os.system("git clone https://gerrit.wikimedia.org/r/pywikibot/core.git && cd core && git submodule update --init && pip install -r requirements.txt && pip install pywikibot")
+                        retry = True
+                        pwb_continue = True
                         
-    return site, repo 
+    return site, repo, retry
