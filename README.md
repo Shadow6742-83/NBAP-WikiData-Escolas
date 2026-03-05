@@ -17,11 +17,9 @@ Nosso trabalho teve como foco dar **Representatividade** as escolas de Santa Cat
 Criar escolas na Wikidata, nas quais não existiam, utilizando-se desses passos:
   - Extrair e tratar os dados a partir de um arquivo fonte (Censo Escolar), garantindo a qualidade e consistência das informações.
   - Verificar se cada instituição existe na Wikidata por meio de consultas em SPARQL, a fim de evitar duplicidades.
-  - Criar novos itens no Wikidata para as escolas não encontradas
-
-E apartir da versão 2.0:
-
-  - Editar os dados das escolas na Wikidata, para manter o banco de dados atualizado com as informações mais recentes das escolas.
+  - Criar novos itens no Wikidata para as escolas não encontradas.
+  - Editar os dados das escolas na Wikidata, para manter o banco de dados atualizado com as informações mais recentes das escolas. (Apartir da versão 2.0)
+  - Simplificar a configuração inicial necessária do Usuário(a) automatizando-a, afim de proporcionar uma melhor facilidade a quem não está familiarizado em como se conectar a Wikidata utilizando o pywikibot. (Apartir da 2.1 (atualmente a Beta) )
 
 ## 🛠️ Metodologia
 O projeto foi feito concluindo esses quatro passos principais:
