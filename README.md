@@ -33,7 +33,7 @@ Foram criadas 6.590 instituições na Wikidata, desde escolas municipais, estadu
 O projeto mostrou que a Wikidata foi mais interativa que alguns sites governamentais (Exemplo: Educação na Palma da Mão), pois na Wikidata, os dados estão disponiveis tanto pras maquinas, quanto pros humanos.
 
 <p align="center">
-  <img src="image.png" alt="Logo do Projeto" width="600"/>
+  <img src="image.png" alt="Mapa de Todas as escolas de Santa Catarina, que não possuem acesso a rede de esgoto" width="600"/>
 </p>
 <p align="center">
 Todas as escolas de Santa Catarina, nas quais não tem acesso a rede de esgoto.
@@ -46,6 +46,8 @@ Todas as escolas de Santa Catarina, nas quais não tem acesso a rede de esgoto.
 Se existe, ele cria, se não, verifica.
 
 - **createNewSchool.py e editSchool.py:** Simples, eles contem funções que criam e editam funções respectivamente.
+
+- **configurador.py:** Este é o configurador, ele faz uma checagem para identificar certos programas necessarios para o script executar com perfeição, se ele não os encontra, conforme o sistema operacional, ele os instala.
   
 - **Pasta Dados:** Aqui estão todos os dados do Censo Escolar 2023 divididos em lotes, pois cada estudante enviou um de cada vez pelo seu proprio computador.
 
