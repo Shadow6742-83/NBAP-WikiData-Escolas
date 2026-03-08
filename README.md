@@ -17,11 +17,9 @@ Nosso trabalho teve como foco dar **Representatividade** as escolas de Santa Cat
 Criar escolas na Wikidata, nas quais não existiam, utilizando-se desses passos:
   - Extrair e tratar os dados a partir de um arquivo fonte (Censo Escolar), garantindo a qualidade e consistência das informações.
   - Verificar se cada instituição existe na Wikidata por meio de consultas em SPARQL, a fim de evitar duplicidades.
-  - Criar novos itens no Wikidata para as escolas não encontradas
-
-E apartir da versão 2.0:
-
-  - Editar os dados das escolas na Wikidata, para manter o banco de dados atualizado com as informações mais recentes das escolas.
+  - Criar novos itens no Wikidata para as escolas não encontradas.
+  - Editar os dados das escolas na Wikidata, para manter o banco de dados atualizado com as informações mais recentes das escolas. (Apartir da versão 2.0)
+  - Simplificar a configuração inicial necessária do Usuário(a) automatizando-a, afim de proporcionar uma melhor facilidade a quem não está familiarizado em como se conectar a Wikidata utilizando o pywikibot. (Apartir da 2.1 (atualmente a Beta) )
 
 ## 🛠️ Metodologia
 O projeto foi feito concluindo esses quatro passos principais:
@@ -35,7 +33,7 @@ Foram criadas 6.590 instituições na Wikidata, desde escolas municipais, estadu
 O projeto mostrou que a Wikidata foi mais interativa que alguns sites governamentais (Exemplo: Educação na Palma da Mão), pois na Wikidata, os dados estão disponiveis tanto pras maquinas, quanto pros humanos.
 
 <p align="center">
-  <img src="image.png" alt="Logo do Projeto" width="600"/>
+  <img src="image.png" alt="Mapa de Todas as escolas de Santa Catarina, que não possuem acesso a rede de esgoto" width="600"/>
 </p>
 <p align="center">
 Todas as escolas de Santa Catarina, nas quais não tem acesso a rede de esgoto.
@@ -48,6 +46,8 @@ Todas as escolas de Santa Catarina, nas quais não tem acesso a rede de esgoto.
 Se existe, ele cria, se não, verifica.
 
 - **createNewSchool.py e editSchool.py:** Simples, eles contem funções que criam e editam funções respectivamente.
+
+- **configurador.py:** Este é o configurador, ele faz uma checagem para identificar certos programas necessarios para o script executar com perfeição, se ele não os encontra, conforme o sistema operacional, ele os instala.
   
 - **Pasta Dados:** Aqui estão todos os dados do Censo Escolar 2023 divididos em lotes, pois cada estudante enviou um de cada vez pelo seu proprio computador.
 
