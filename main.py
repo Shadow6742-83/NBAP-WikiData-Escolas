@@ -291,3 +291,5 @@ with open(arquivo_fonte, newline='', encoding='utf-8') as arquivo_csv:
 
                     continuar = True
                     editar_escolas(nome, codigo_inep, codigo_municipio, municipio, estudantes, professores, localizacao, localizacao_diferenciada, coordenadas_latitude, coordenadas_longitude, queima_lixo, separa_lixo, esgoto_fossa_comum, esgoto_inexistente, esgoto_rede, esgoto_fossa_septica, energia_gerador, energia_publica, energia_renovavel, adicionar_declaracao,  escolas, continuar,  energia_inexistente)
+
+input("Você finalizou o script com sucesso\nPressione qualquer tecla para encerrar o script!"\n)
